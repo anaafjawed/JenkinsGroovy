@@ -1,8 +1,6 @@
-pipeline{
-
-    agent any
+node{
         stages{
-            stage('Checkout Code'){
+            stage('SCM'){
                 steps {
                     git branch: 'main', url: 'https://github.com/aliamjad94/TradeApp.git'
                 }
